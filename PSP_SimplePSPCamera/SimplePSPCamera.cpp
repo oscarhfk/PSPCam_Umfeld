@@ -87,14 +87,16 @@ int SimplePSPCamera::cameraThread(SceSize args, void* argp) {
     memset(&videoparam, 0, sizeof(videoparam));
     videoparam.size = sizeof(videoparam);
 
-    // 320x240 - High quality camera input
+    // 160x120 - PSP USB camera standard resolution
+     videoparam.resolution = PSP_USBCAM_RESOLUTION_160_120;
+
+    // 320x240
     //videoparam.resolution = PSP_USBCAM_RESOLUTION_320_240;
 
-    // // 352x288 - CIF resolution
-    videoparam.resolution = PSP_USBCAM_RESOLUTION_352_288;
+    // // 352x288
+    // videoparam.resolution = PSP_USBCAM_RESOLUTION_352_288;
 
-    // 160x120 - PSP USB camera standard resolution
-   // videoparam.resolution = PSP_USBCAM_RESOLUTION_160_120;
+
 
 
     videoparam.framerate = PSP_USBCAM_FRAMERATE_30_FPS;
@@ -209,7 +211,6 @@ int SimplePSPCamera::init() {
 
     return 1;
 }
-
 
 bool SimplePSPCamera::isFrameReady() {
     if (frame_ready && !app_acked && running) {

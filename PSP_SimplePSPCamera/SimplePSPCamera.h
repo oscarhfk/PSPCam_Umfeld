@@ -11,17 +11,17 @@
 #include <pspkernel.h>
 
 
-//#define CAM_WIDTH 160
-//#define CAM_HEIGHT 120
-//#define CAM_MAX_FRAME_SIZE (1024*34)  // Back to original
+#define CAM_WIDTH 160
+#define CAM_HEIGHT 120
+#define CAM_MAX_FRAME_SIZE (1024*34)  // Back to original
 
  //#define CAM_WIDTH 320
  //#define CAM_HEIGHT 240
  //#define CAM_MAX_FRAME_SIZE (1024*128)
 
-#define CAM_WIDTH 352
-#define CAM_HEIGHT 288
-#define CAM_MAX_FRAME_SIZE (1024*128)
+//#define CAM_WIDTH 352
+//#define CAM_HEIGHT 288
+//#define CAM_MAX_FRAME_SIZE (1024*128)
 
 
 
