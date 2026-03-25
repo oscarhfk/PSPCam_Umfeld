@@ -7,14 +7,14 @@ SimplePSPCamera* pspCamera;
 u32 *framebuffer;
 PImage* umfeldImg;
 
-//int mWW = 128;  // POT for 160x120
-//int mHH = 128;
+int mWW = 128;  // POT for 160x120
+int mHH = 128;
 
 //int mWW = 256;  // POT for 320x240
 //int mHH = 256;
 
-int mWW = 512;  // POT for 352x288
-int mHH = 512;
+//int mWW = 512;  // POT for 352x288
+//int mHH = 512;
 
 
 // Helper to scale  camera data to  display buffer
