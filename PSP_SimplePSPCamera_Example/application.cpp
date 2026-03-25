@@ -50,9 +50,9 @@ void setup() {
     umfeldImg = new PImage();
     umfeldImg->init(framebuffer, mWW, mHH);
 
-    // Initialize with black while waiting for camera
+    // Initialize with green while waiting for camera
     for (int i = 0; i < mWW * mHH; i++) {
-        framebuffer[i] = color_pack_i(0, 0, 0, 255);
+        framebuffer[i] = color_pack_i(0, 255, 0, 255);
     }
 }
 
